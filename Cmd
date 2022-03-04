@@ -1,0 +1,36 @@
+git config --global user.name "Name"                            -Tell who you are
+git config --global user.email Name@example.com                 -Tell Your email
+git config user.name                                            -Display name
+git help <verb>                                                 -Display fully manpage
+git help                                                        -Display basic command one needs
+git <verb> -h                                                   -Display a quick help
+git init                                                        -Create a new local repos
+git clone /path/to/repos                                        -Copy a local repos
+git clone user@host:/path/to/repos                              -Copy a remote repos
+git add <filename> <filename>                                   -Add files to stage
+git add *                                                       -Add all unstaged files to stage
+git commit -m "mesg"                                            -Commit changes to head(not yet remote)
+git commit -a                                                   -Commit changes to you have added
+git push origin master                                          -Send changes to master of remote repos
+git status                                                      -Show unstaged and staged but not commit files
+git remote add origin <server>                                  -Connect local repos to remote repos
+git remote -v                                                   -List all currently configured remote repos
+git checkout -b <branchname>                                    -Create a new branch and switch to it
+git checkout <branchname>                                       -Switch branch
+git branch                                                      -List all branches in your repos and mark where you are
+git branch -d <branchname>                                      -Delete the branch
+git push origin <branchname>                                    -Push the branch to remote repos
+git push --all origin                                           -Push all branches to remote repos
+git push origin :<branchname>                                   -Delete a remote branch
+git pull                                                        -Fetch and merge changes from remote to local repos
+git merge <branchname>                                          -Merge a diff branch to curr branch
+git diff                                                        -View all merge conflicts
+git diff base <filename>                                        -View confilcts against the base file
+git diff <sourcebranch> <targetbranch>                          -Preview changes before merge
+git tag 1.0.0 <commitID>                                        -Mark with tags
+git log                                                         -See version history
+git push --tags origin                                          -Push tags to remote
+git checkout -- <filename>                                      -Back to last commit version of the file
+git fetch origin                                                -Get the latest version but not merge to local repos
+git grep "foo()"                                                -Search the working dir for "foo()"
+git mv file_from file_to                                        -Rename files
